@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <img src="./assets/images/logo.svg" alt="Logo" class="logo">
+        <h1>Extensions</h1>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle dark/light mode">
+        <img src="./assets/images/icon-sun.svg" alt="Light mode" class="icon-sun">
+        <img src="./assets/images/icon-moon.svg" alt="Dark mode" class="icon-moon">
+      </button>
+    </header>
+
+    <main>
+      <div class="extensions-header">
+        <h2>Extensions List</h2>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="inactive">Inactive</button>
+        </div>
+      </div>
+
+      <div class="extensions-grid" id="extensions-container">
+      </div>
+    </main>
+  </div>
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
+    Coded by <a href="#">Njuguna Harrison</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
